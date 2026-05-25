@@ -1,0 +1,18 @@
+[package]
+name = "lambda-cube"
+version = "0.1.0"
+edition = "2024"
+description = "Six typed lambda calculi in Rust (untyped, λ→, λ2, HM, λω, λP) with Lean 4 type-safety proofs for STLC"
+readme = "README.md"
+license = "MIT"
+keywords = ["lambda-calculus", "type-theory", "interpreter", "type-checker", "pl"]
+categories = ["compilers", "command-line-utilities"]
+
+[dependencies]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+pedantic = { level = "allow", priority = -1 }
+all = { level = "warn", priority = -1 }
